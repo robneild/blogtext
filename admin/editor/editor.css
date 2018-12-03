@@ -1,0 +1,14 @@
+div.blogtext_syntax_link {
+  text-align: center;
+  font-size: 10px;
+  padding: 1px 6px;
+  background-color: #f5f5f5;
+}
+
+.quicktags-toolbar input[value="link"] {
+  color: #0000FF;
+}
+
+#quicktags #ed_strike, .quicktags-toolbar input[value="strike"] {
+  text-decoration: line-through;
+}

@@ -1,0 +1,110 @@
+/**
+ * Default dark GeSHi CSS
+ *
+ * Copyright 2011 Sebastian Krysmanski
+ *
+ * This work is licensed under the Creative Commons Attribution-Share Alike 2.5 Canada License.
+ * To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/2.5/ca/
+ * or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+ *
+ * @copyright		Copyright 2011, Sebastian Krysmanski.
+ * @link			http://manski.net
+ * @license			http://creativecommons.org/licenses/by-sa/2.5/ca/
+ */
+
+/*
+ * Global geshi styles
+ **********************/
+.code, code {
+  background: #393939 !important;
+}
+
+.code {
+  border: 1px solid #c0c0c0 !important;
+}
+
+.code td.ln {
+  border-right: 1px solid #d78b41 !important;
+}
+
+.not-hl, .not-hl td pre, .code td.ln pre {
+  color: #fff !important;
+}
+
+.hl, .hl td pre, code.hl {
+  color: #fff !important;
+}
+
+/* Line highlights */
+.ln-xtra {
+  background: #3b5956;
+  display: block;
+}
+
+
+/*
+ * GeSHi syntax elements
+ **************************/
+
+/* comments */
+.co1,
+.coMULTI {
+	color: #bd48b3;
+}
+
+/* C# regions, C/C++ includes */
+.co2 {
+  color: #A0A0A0;
+}
+
+/* keywords */
+
+/* C++/C#/Java: static */
+.kw1 {
+  color: #ffcc66;
+}
+
+/* Java: public, protected */
+.kw2 {
+  color: #ffcc66;
+}
+
+/* C++/C#/Java: new; C++: standard functions like printf() */
+.kw3 {
+  color: #ffcc66;
+}
+
+.hl-c .kw3, .hl-cpp .kw3 {
+  color: #f4b331;
+}
+
+/* C++/C#/Java: class, int, double, ... */
+.kw4 {
+  color: #ffcc66;
+}
+
+/* Symbols like : . , = and brackets */
+.sy0, .sy1, .sy2, .sy3, .sy4, .br0 {
+  color: #fff;
+}
+
+/* member methods */
+.me0, .me1, .me2 {
+	color: #f4b331;
+}
+
+/* strings */
+.st0 {
+	color: #99ff00;
+}
+
+
+/* numbers */
+.nu0 {
+	color: #8acccf;
+}
+
+/* vars */
+.re0 {
+	color: #059532;
+}
