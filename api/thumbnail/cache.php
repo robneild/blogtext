@@ -118,7 +118,7 @@ class MSCL_ThumbnailCache {
     global $wpdb;
     MSCL_check_wordpress_is_loaded();
 
-    @mysql_query("BEGIN", $wpdb->dbh); // begin transaction
+    @mysqli_query("BEGIN", $wpdb->dbh); // begin transaction
 
     $table_name = self::get_table_name();
 
@@ -161,7 +161,7 @@ class MSCL_ThumbnailCache {
       }
     }
 
-    @mysql_query("COMMIT", $wpdb->dbh); // commit transaction
+    @mysqli_query("COMMIT", $wpdb->dbh); // commit transaction
   }
 
   public static function is_thumbnail_used($thumbnail_id) {

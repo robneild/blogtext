@@ -92,7 +92,7 @@ class MSCL_PersistentObjectCache extends MSCL_AbstractCache {
   public function clear_cache() {
     global $wpdb;
 
-    @mysql_query("BEGIN", $wpdb->dbh); // begin transaction
+    @mysqli_query("BEGIN", $wpdb->dbh); // begin transaction
 
     // NOTE: The % token must be added to the parameter and not directly in the SQL statement as this doesn't
     //   work.
@@ -101,7 +101,7 @@ class MSCL_PersistentObjectCache extends MSCL_AbstractCache {
       delete_option($entry);
     }
     
-    @mysql_query("COMMIT", $wpdb->dbh); // commit transaction
+    @mysqli_query("COMMIT", $wpdb->dbh); // commit transaction
   }
 }
 ?>
